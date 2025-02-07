@@ -1,9 +1,5 @@
 Add-Type -AssemblyName System.Windows.Forms
 
-# Set-ExecutionPolicy Bypass -Scope Process -Force
-# Install-Module ps2exe -Scope CurrentUser
-# Invoke-PS2EXE "C:\Users\Admin\Desktop\Data\VS-Code\NetworkCalculator\NetworkCalculator.ps1" "C:\Users\Admin\Desktop\Data\VS-Code\NetworkCalculator\NetworkCalculator.exe" -icon "C:\Users\Admin\Desktop\Data\VS-Code\NetworkCalculator\Icon256x256.ico"
-
 function Get-SubnetInfo {
     param (
         [string]$ipAddress,
@@ -63,7 +59,7 @@ function Get-SubnetInfo {
 
 # GUI Creation
 $form = New-Object System.Windows.Forms.Form
-$form.Text = "Subnet Host Calculator"
+$form.Text = "Network Calculator"
 $form.Size = New-Object System.Drawing.Size(450, 350)
 $form.StartPosition = "CenterScreen"
 
